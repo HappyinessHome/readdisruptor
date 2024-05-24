@@ -1,4 +1,4 @@
-package threadpool;
+package com.threadpool;
 
 import com.lmax.disruptor.BlockingWaitStrategy;
 import com.lmax.disruptor.RingBuffer;

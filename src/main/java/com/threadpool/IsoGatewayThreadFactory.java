@@ -1,4 +1,4 @@
-package threadpool;
+package com.threadpool;
 
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
