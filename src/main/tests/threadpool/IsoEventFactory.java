@@ -1,4 +1,4 @@
-package com.threadpool;
+package threadpool;
 
 
 import com.lmax.disruptor.EventFactory;

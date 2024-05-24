@@ -1,4 +1,4 @@
-package com.threadpool;
+package threadpool;
 
 import com.lmax.disruptor.BlockingWaitStrategy;
 import com.lmax.disruptor.RingBuffer;
@@ -20,11 +20,9 @@ public class Test {
             sendHandlers[i]=new SendHandler();
         }
 
-        //设置事件业务处理器---消费者
         disruptor.handleEventsWithWorkerPool(sendHandlers);
 
         disruptor.start();
-        //获取ringbuffer环，用于接取生产者生产的事件
         RingBuffer<String> ringBuffer = disruptor.getRingBuffer();
         long next = ringBuffer.next();
         ringBuffer.publish(next);
